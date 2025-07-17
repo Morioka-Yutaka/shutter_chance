@@ -27,3 +27,17 @@ It is useful for  data review or debugging by presenting variable values in a cl
 
 <img width="264" height="321" alt="Image" src="https://github.com/user-attachments/assets/323df33d-f595-40f5-9688-b1de1f210de8" />
 
+~~~sas 
+data DT1;
+length A A2 8.;
+retain A2;
+input A @@;
+if A^=. then A2=A;
+%shutter_chance(n= 1:6, varlist=A A2);
+cards;
+1 . 5 . . 10
+;
+run;
+~~~
+
+
