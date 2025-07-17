@@ -4,7 +4,7 @@ SHUTTER_CHANCE: Visual Checkpoints for SAS Data Step Review
 ![shutter_chance](./shutter_chance_small.png)  
 
 # %shutter_chance
-This macro generates a visual checkpoint output for selected records (based on _N_) using ODS html layout and table constructs. .<br>
+This macro generates a visual checkpoint output for selected records (based on _N_) using ODS html layout and table constructs..<br>
 It is useful for  data review or debugging by presenting variable values in a clear format.
 
  Parameters      : <br>
@@ -47,7 +47,7 @@ run;
 0.1.0(17July2025): Initial version<br>
 
 ## What is SAS Packages?  
-The package is built on top of SAS Packages framework(SPF) developed by Bartosz Jablonski.
+The package is built on top of SAS Packages framework(SPF) developed by Bartosz Jablonski.<br>
 For more information about SAS Packages framework, see [SAS_PACKAGES](https://github.com/yabwon/SAS_PACKAGES).  
 You can also find more SAS Packages(SASPACs) in [SASPAC](https://github.com/SASPAC).
 
