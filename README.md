@@ -6,3 +6,10 @@ SHUTTER_CHANCE: Visual Checkpoints for SAS Data Step Review
 # %shutter_chance
 This macro generates a visual checkpoint output for selected records (based on _N_) using ODS html layout and table constructs. .<br>
 It is useful for  data review or debugging by presenting variable values in a clear format.
+
+ Parameters      : <br>
+ ~~~text  
+   CheckID  = Optional identifier for the output block. If not specified, &sysindex is used.
+   n        = Record numbers (_N_) to trigger output generation (e.g., 1:3 or 2 4 6). Default is 1.
+   varlist  = List of variable names to be displayed (space-delimited). This is required.
+~~~
