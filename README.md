@@ -13,3 +13,14 @@ It is useful for  data review or debugging by presenting variable values in a cl
    n        = Record numbers (_N_) to trigger output generation (e.g., 1:3 or 2 4 6). Default is 1.
    varlist  = List of variable names to be displayed (space-delimited). This is required.
 ~~~
+
+~~~sas 
+ Usage example: <br>
+   data wk1;
+     set sashelp.class;
+     %shutter_chance(CheckID=A, n=1:3, varlist=Name Weight Height BMI);
+     BMI = Weight / HEIGHT**2 * 703;
+     %shutter_chance(CheckID=B, n=1:3, varlist=Name Weight Height BMI);
+   run;
+~~~
+
