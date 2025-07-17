@@ -24,3 +24,6 @@ It is useful for  data review or debugging by presenting variable values in a cl
    run;
 ~~~
 
+
+<img width="264" height="321" alt="Image" src="https://github.com/user-attachments/assets/323df33d-f595-40f5-9688-b1de1f210de8" />
+
