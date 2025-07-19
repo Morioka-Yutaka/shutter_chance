@@ -14,8 +14,8 @@ It is useful for  data review or debugging by presenting variable values in a cl
    varlist  = List of variable names to be displayed (space-delimited). This is required.
 ~~~
 
+Usage example: <br>
 ~~~sas 
- Usage example: <br>
    data wk1;
      set sashelp.class;
      %shutter_chance(CheckID=A, n=1:3, varlist=Name Weight Height BMI);
