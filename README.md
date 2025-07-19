@@ -41,7 +41,7 @@ Usage example: <br>
 ~~~
 
 
-<img width="264" height="321" alt="Image" src="https://github.com/user-attachments/assets/323df33d-f595-40f5-9688-b1de1f210de8" />
+<img width="300" height="109" alt="Image" src="https://github.com/user-attachments/assets/014f0d03-94ce-4fa5-888d-cd9e9f9f7e21" />
 
 
 ~~~sas 
