@@ -30,11 +30,13 @@ Usage example: <br>
 
 <img width="264" height="321" alt="Image" src="https://github.com/user-attachments/assets/323df33d-f595-40f5-9688-b1de1f210de8" />
 
-Usage example: <br>
+
+
+
 ~~~sas 
    data wk2;
      set sashelp.class;
-     %shutter_chance(CheckID=C, wh=%nrbquote(SEX='F' and AGE=15), varlist=Name Sex Age);
+     %shutter_chance(CheckID=C, if_condition=%nrbquote(SEX='F' and AGE=15), varlist=Name Sex Age);
    run;
 ~~~
 
