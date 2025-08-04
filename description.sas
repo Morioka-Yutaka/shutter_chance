@@ -1,7 +1,7 @@
 Type : Package
 Package : shutter_chance
 Title : shutter_chance
-Version : 0.1.1
+Version : 0.2.0
 Author : Yutaka Morioka(sasyupi@gmail.com)
 Maintainer : Yutaka Morioka(sasyupi@gmail.com)
 License : MIT
