@@ -105,6 +105,10 @@ run;
 
 <img width="380" height="366" alt="Image" src="https://github.com/user-attachments/assets/53866fad-08e5-4f3e-8de9-062895ba8bf2" />  <br>
 
+ ~~~sas
+%macro_variable_shutter_chance(CheckID=ZZZ, automatic_fl =Y);
+~~~
+<img width="700" height="396" alt="Image" src="https://github.com/user-attachments/assets/247722a5-26b0-4559-b10b-34da44dde65e" />  <br>
 
  Notes and Caveats:  
      - This macro intentionally masks its own local macro variables from being   
