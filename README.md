@@ -69,7 +69,7 @@ run;
      variables as specified by the parameter.
 
  Parameters      :  
- ~~~text
+~~~text
      CheckID        = [optional] Identifier string used to distinguish the ODS output 
                             for each macro call. If not provided, defaults to &SYSINDEX.
 
