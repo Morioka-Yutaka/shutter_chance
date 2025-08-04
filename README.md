@@ -61,7 +61,8 @@ run;
 
 
 # version history<br>
-0.1.1(20July2025): Add if_condition Parameter<br>
+0.2.0(04August2025): Add %macro_variable_shutter_chance<br>
+0.1.1(20July2025): Add if_condition Parameter in %shutter_chance.<br>
 0.1.0(17July2025): Initial version<br>
 
 ## What is SAS Packages?  
