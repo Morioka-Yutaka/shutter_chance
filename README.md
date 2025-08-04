@@ -61,27 +61,24 @@ run;
 
 
 # %macro_variable_shutter_chance
- Description     : 
-     This macro displays the current macro variables grouped by their scope
-     (GLOBAL, LOCAL, AUTOMATIC) in a formatted SAS RWI(report Writing Interface) ods layout.
-     It is primarily intended for debugging or reporting the macro environment
-     during runtime. Output layout varies depending on the presence of automatic
+ Description     :   
+     This macro displays the current macro variables grouped by their scope  
+     (GLOBAL, LOCAL, AUTOMATIC) in a formatted SAS RWI(report Writing Interface) ods layout.  
+     It is primarily intended for debugging or reporting the macro environment  
+     during runtime. Output layout varies depending on the presence of automatic  
      variables as specified by the parameter.
 
- Parameters      :
+ Parameters      :  
+ ~~~text
      CheckID        = [optional] Identifier string used to distinguish the ODS output 
                             for each macro call. If not provided, defaults to &SYSINDEX.
 
      automatic_fl   = [optional] Flag to include AUTOMATIC scope variables. 
                       Accepts 'Y' or 'N'. Default is 'N'.
+~~~
 
- Features        :
-     - Uses SASHELP.VMACRO to retrieve macro variables by scope
-     - Hash objects and iterators used for efficient processing
-     - Outputs results using the ODS OUT interface
-     - Supports multiple executions with unique output regions
-
- Usage Example   :
+ Usage Example   :  
+ ~~~sas
      %let mvar1=A;
      %let mvar2=B;
      %macro_variable_shutter_chance(CheckID=A);
@@ -102,17 +99,18 @@ run;
          %end;
      %mend;
      %test;
+~~~sas
 
- Notes and Caveats:
-     - This macro intentionally masks its own local macro variables from being 
-       reported in the LOCAL scope output. This prevents internal implementation 
+ Notes and Caveats:  
+     - This macro intentionally masks its own local macro variables from being   
+       reported in the LOCAL scope output. This prevents internal implementation   
        details from appearing in the diagnostics.
         scope ne "MACRO_VARIABLE_SHUTTER_CHANCE"
-        In other words, scope ne "MACRO_VARIABLE_SHUTTER_CHANCE2 is included in the extraction.  
+        In other words, scope ne "MACRO_VARIABLE_SHUTTER_CHANCE2 is included in the extraction.    
 
-     - Some AUTOMATIC macro variables may reflect values that were populated or 
-       modified as a result of this macro・ｽfs own execution (e.g., SYSLAST, SYSERR,  
-       SYSINDEX, etc.). Their presence or contents should be interpreted accordingly. 
+     - Some AUTOMATIC macro variables may reflect values that were populated or   
+       modified as a result of this macro・ｽfs own execution (e.g., SYSLAST, SYSERR,    
+       SYSINDEX, etc.). Their presence or contents should be interpreted accordingly.  
 
 
 # version history<br>
