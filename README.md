@@ -99,7 +99,7 @@ run;
          %end;
      %mend;
      %test;
-~~~sas
+~~~
 
  Notes and Caveats:  
      - This macro intentionally masks its own local macro variables from being   
