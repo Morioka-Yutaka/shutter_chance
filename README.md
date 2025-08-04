@@ -118,7 +118,7 @@ run;
         In other words, scope ne "MACRO_VARIABLE_SHUTTER_CHANCE2 is included in the extraction.    
 
      - Some AUTOMATIC macro variables may reflect values that were populated or   
-       modified as a result of this macro・ｽfs own execution (e.g., SYSLAST, SYSERR,    
+       modified as a result of this macro　own execution (e.g., SYSLAST, SYSERR,    
        SYSINDEX, etc.). Their presence or contents should be interpreted accordingly.  
 
 
