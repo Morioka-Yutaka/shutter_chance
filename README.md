@@ -4,7 +4,7 @@ MACRO_VARIABLE_SHUTTER_CHANCE: Visually check the global and local status and va
 ![shutter_chance](./shutter_chance_small.png)  
 
 # %shutter_chance
-This macro generates a visual checkpoint output for selected records (based on _N_ or conditional expression) using ODS html layout and table constructs..<br>
+This macro generates a visual checkpoint output for selected records (based on _N_ or conditional expression) using ODS html layout and table constructs.<br>
 It is useful for  data review or debugging by presenting variable values in a clear format.
 
  Parameters      : <br>
@@ -101,9 +101,9 @@ run;
      %test;
 ~~~
 
-<img width="388" height="222" alt="Image" src="https://github.com/user-attachments/assets/b6395af3-a401-425d-b9e3-2ea87ecb156a" />  
+<img width="388" height="222" alt="Image" src="https://github.com/user-attachments/assets/b6395af3-a401-425d-b9e3-2ea87ecb156a" />  <br>
 
-<img width="380" height="366" alt="Image" src="https://github.com/user-attachments/assets/53866fad-08e5-4f3e-8de9-062895ba8bf2" />  
+<img width="380" height="366" alt="Image" src="https://github.com/user-attachments/assets/53866fad-08e5-4f3e-8de9-062895ba8bf2" />  <br>
 
 
  Notes and Caveats:  
