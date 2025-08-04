@@ -1,6 +1,6 @@
-# shutter_chance (v0.1.1, 20July2025)
+# shutter_chance (v0.2.0, 04August2025)
 SHUTTER_CHANCE: Visual Checkpoints for SAS Data Step Review
-
+MACRO_VARIABLE_SHUTTER_CHANCE: Visually check the global and local status and values of SAS macro variables at any point.　　
 ![shutter_chance](./shutter_chance_small.png)  
 
 # %shutter_chance
@@ -58,6 +58,61 @@ run;
 ~~~
 
 <img width="122" height="319" alt="Image" src="https://github.com/user-attachments/assets/d9ffe92c-b226-4f8b-9ff9-754656978b77" />
+
+
+# %macro_variable_shutter_chance
+ Description     : 
+     This macro displays the current macro variables grouped by their scope
+     (GLOBAL, LOCAL, AUTOMATIC) in a formatted SAS RWI(report Writing Interface) ods layout.
+     It is primarily intended for debugging or reporting the macro environment
+     during runtime. Output layout varies depending on the presence of automatic
+     variables as specified by the parameter.
+
+ Parameters      :
+     CheckID        = [optional] Identifier string used to distinguish the ODS output 
+                            for each macro call. If not provided, defaults to &SYSINDEX.
+
+     automatic_fl   = [optional] Flag to include AUTOMATIC scope variables. 
+                      Accepts 'Y' or 'N'. Default is 'N'.
+
+ Features        :
+     - Uses SASHELP.VMACRO to retrieve macro variables by scope
+     - Hash objects and iterators used for efficient processing
+     - Outputs results using the ODS OUT interface
+     - Supports multiple executions with unique output regions
+
+ Usage Example   :
+     %let mvar1=A;
+     %let mvar2=B;
+     %macro_variable_shutter_chance(CheckID=A);
+
+     %macro test;
+         %global mvar2;
+         %let mvar1=D;
+         %let mvar2=E;
+         %let mvar4=F;
+         %do i = 1 %to 2;
+             %put &i;
+             %macro_variable_shutter_chance(CheckID=B);
+             %if &i=1 %then %do;
+                 data _null_;
+                     call symputx("mvar3","G","L");
+                 run;
+             %end;
+         %end;
+     %mend;
+     %test;
+
+ Notes and Caveats:
+     - This macro intentionally masks its own local macro variables from being 
+       reported in the LOCAL scope output. This prevents internal implementation 
+       details from appearing in the diagnostics.
+        scope ne "MACRO_VARIABLE_SHUTTER_CHANCE"
+        In other words, scope ne "MACRO_VARIABLE_SHUTTER_CHANCE2 is included in the extraction.  
+
+     - Some AUTOMATIC macro variables may reflect values that were populated or 
+       modified as a result of this macro・ｽfs own execution (e.g., SYSLAST, SYSERR,  
+       SYSINDEX, etc.). Their presence or contents should be interpreted accordingly. 
 
 
 # version history<br>
