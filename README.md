@@ -101,6 +101,9 @@ run;
      %test;
 ~~~
 
+<img width="388" height="222" alt="Image" src="https://github.com/user-attachments/assets/b6395af3-a401-425d-b9e3-2ea87ecb156a" />  
+
+
  Notes and Caveats:  
      - This macro intentionally masks its own local macro variables from being   
        reported in the LOCAL scope output. This prevents internal implementation   
