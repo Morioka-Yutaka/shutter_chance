@@ -1,7 +1,8 @@
 # shutter_chance (v0.2.0, 04August2025)
 SHUTTER_CHANCE: Visual Checkpoints for SAS Data Step Review.  
 MACRO_VARIABLE_SHUTTER_CHANCE: Visually check the global and local status and values of SAS macro variables at any point.  
-![shutter_chance](./shutter_chance_small.png)  
+
+<img width="180" height="180" alt="Image" src="https://github.com/user-attachments/assets/9cc8cebc-f603-4dfb-9935-38e2272f786e" />  
 
 # %shutter_chance
 This macro generates a visual checkpoint output for selected records (based on _N_ or conditional expression) using ODS html layout and table constructs.<br>
