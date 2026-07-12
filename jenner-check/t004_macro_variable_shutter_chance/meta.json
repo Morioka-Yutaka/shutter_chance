@@ -1,0 +1,7 @@
+{
+  "bundle": "t004_macro_variable_shutter_chance",
+  "source_file": "shutter_chance/06_macros/macro_variable_shutter_chance.sas",
+  "source_blob_sha": "67034ee99625e59f30af946a329224e56cf7546d",
+  "source_commit": "554479b7f50e90b430d7f1e99d3bd49b4498594a",
+  "notes": "%macro_variable_shutter_chance macro definition copied unmodified; caller is the README's own Usage Example verbatim: a %test macro nested two levels deep that sets GLOBAL/LOCAL macro variables across a 2-iteration %do loop and checkpoints the macro-variable environment (scope introspection via sashelp.vmacro + hash objects) at CheckID=A and CheckID=B."
+}

@@ -1,0 +1,17 @@
+{
+  "_captured_at": "2026-07-12T08:55:29.238667+00:00",
+  "_captured_run_id": "r_ac39e24323c446188b336c5563aed463",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: DATA elapsed:"
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}
