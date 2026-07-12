@@ -1,0 +1,7 @@
+{
+  "bundle": "t003_shutter_chance_missing_data",
+  "source_file": "shutter_chance/06_macros/shutter_chance.sas",
+  "source_blob_sha": "6cb95f551829968a3e3a1bee4a836b176c15c1f0",
+  "source_commit": "554479b7f50e90b430d7f1e99d3bd49b4498594a",
+  "notes": "%shutter_chance macro definition copied unmodified; caller is the README's own third usage example verbatim: DATALINES walkthrough of a RETAIN-based missing-value carry-forward (A2 holds the last non-missing A), checkpointed at every one of the 6 input rows via n=1:6."
+}

@@ -1,0 +1,23 @@
+
+  Obs     Name  Sex  Age  Height  Weight
+-----  -------  ---  ---  ------  ------
+    1  Amir     M     13    61.2      95
+    2  Bethany  F     14    63.8     105
+    3  Carlos   M     12    58.5      88
+    4  Diana    F     11      53    62.5
+    5  Ethan    M     15      68     130
+    6  Fiona    F     13    60.5      92
+    7  George   M     14    65.5     115
+    8  Hannah   F     12      57      78
+    9  Ivan     M     11    55.8      72
+   10  Julia    F     15      64     108
+   11  Kevin    M     16    70.5     145
+   12  Lily     F     14      62    97.5
+   13  Marco    M     12    59.3      85
+   14  Nadia    F     13    61.8      93
+   15  Oscar    M     15    67.2     128
+   16  Priya    F     12    55.5      75
+   17  Quinn    M     13      63     100
+   18  Rosa     F     11    52.5      58
+   19  Samuel   M     14      66     120
+

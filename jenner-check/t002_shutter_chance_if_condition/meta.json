@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_shutter_chance_if_condition",
+  "source_file": "shutter_chance/06_macros/shutter_chance.sas",
+  "source_blob_sha": "6cb95f551829968a3e3a1bee4a836b176c15c1f0",
+  "source_commit": "554479b7f50e90b430d7f1e99d3bd49b4498594a",
+  "notes": "%shutter_chance macro definition copied unmodified; caller is the README's own if_condition= usage example (data wk1; set sashelp.class; checkpoint gated on SEX='F' and AGE=15). sashelp.class stands in for the caller's own dataset per the README example itself."
+}
